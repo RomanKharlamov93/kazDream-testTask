@@ -1,0 +1,48 @@
+<div class="test-task">
+    <div class="container">
+        <div class="test-task__header">
+            <h1 class="kek">
+                Доброго денёчка
+            </h1>
+            <div class="some-control">
+                <div class="some-control__input-items">
+                    <input class="some-control__input" type="number" [(ngModel)]='startYear' (keyup.enter)="endYear && getAll(startYear,endYear)" placeholder="Начальный год"/>
+                    <input class="some-control__input" type="number" [(ngModel)]='endYear' (keyup.enter)="startYear && getAll(startYear,endYear)" placeholder="Конечный год"/>
+                </div>
+                <div class="some-control__btn-items">
+                    <button class="some-control__btn" (click)="getAll(startYear,endYear)">
+                        Кликай
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-task__canvas">
+
+            <div>
+                <canvas width="1400" height="400"
+                        baseChart
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"
+                >
+                </canvas>
+            </div>
+
+        </div>
+
+        <div class="test-task__footer">
+            <div class="sabj">
+                <h2 class="sabj__title">
+                    Коротенький сабж
+                </h2>
+                <p class="sabj__text">
+                    Я не претендую на должность мидла или джун 4-5, но это задание совсем не из лёгких было, поэтому прошу судить объективно. С:
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>

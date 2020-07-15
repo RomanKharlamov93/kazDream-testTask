@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.kek {
+  margin-bottom: 25px;
+  font-style: italic;
+  text-align: center;
+}
+
+.some-control {
+  text-align: center;
+  &__input-items {
+    margin-bottom: 20px;
+  }
+  &__input {
+    &:first-child {
+      margin-right: 15px;
+    }
+
+    border: 1px solid #eeccee;
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+    min-height: 30px;
+    min-width: 250px;
+    box-shadow: none;
+    font-size: 20px
+  }
+  &__btn {
+    box-shadow: none;
+    border: 1px solid #eeccee;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 200px;
+    background: #eeccee;
+    transition: linear .2s;
+    cursor: pointer;
+    &:hover {
+      background: #de9fde;
+    }
+  }
+}
+
+
+.test-task {
+  &__header {
+    margin-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  &__canvas {
+    margin-bottom: 25px;
+  }
+
+  &__footer {
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+}
+
+.sabj {
+  padding: 10px;
+  border-top: 5px solid black;
+  border-left: 10px solid gold;
+  border-right: 2.5px solid gold;
+  border-bottom: 5px solid black;
+  border-radius: 10px;
+
+  &__title {
+    color: snow;
+    text-shadow: #000 1px 0px 1px, #000 0px 1px 1px, #000 0px -1px 1px, #000 -1px 0px 1px;
+  }
+
+}
